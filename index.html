@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>玩具王国 Toy Kingdom</title>
+<style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family: "微软雅黑",sans-serif; color:#333;}
+    header{
+        background:#ffcc00;
+        text-align:center;
+        padding:40px 20px;
+    }
+    header h1{font-size:3rem; color:#222;}
+    header p{font-size:1.2rem; margin-top:8px;}
+
+    .btn-primary{
+        display:inline-block;
+        margin-top:15px;
+        padding:12px 25px;
+        background:#e63946;
+        color:#fff;
+        text-decoration:none;
+        font-weight:600;
+        border-radius:50px;
+        transition:0.3s;
+    }
+    .btn-primary:hover{background:#bf1f2d;}
+
+    .hero{
+        background-image:url("https://placehold.co/1200x500?text=玩具王国 Banner");
+        background-size:cover;
+        background-position:center;
+        height:500px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    }
+    .hero h2{
+        color:#fff;
+        font-size:2.8rem;
+    }
+
+    .products{
+        max-width:1200px;
+        margin:40px auto;
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap:20px;
+        padding:0 20px;
+    }
+    .toy-card{
+        border:1px solid #eee;
+        border-radius:6px;
+        overflow:hidden;
+        transition:0.3s;
+    }
+    .toy-card:hover{
+        transform:translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .toy-card img{width:100%;}
+
+    .toy-card .info{
+        padding:12px;
+        text-align:center;
+    }
+    .toy-card .info h3{font-size:1.2rem; margin-bottom:8px;}
+    .toy-card .info p{font-size:0.95rem; color:#666;}
+
+    footer{
+        background:#222;
+        color:#fff;
+        text-align:center;
+        padding:20px;
+        margin-top:40px;
+        font-size:0.85rem;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>玩具王国 Toy Kingdom</h1>
+    <p>孩子们的快乐工厂，乐趣无穷！</p>
+    <a href="#products" class="btn-primary">立即探索玩具</a>
+</header>
+
+<section class="hero">
+    <h2>发现属于孩子的奇妙世界！</h2>
+</section>
+
+<section id="products" class="products">
+    <div class="toy-card">
+        <img src="https://placehold.co/300x200?text=遥控车" alt="遥控车">
+        <div class="info">
+            <h3>极速遥控车</h3>
+            <p>高性能电动遥控，速度与激情。</p>
+        </div>
+    </div>
+    <div class="toy-card">
+        <img src="https://placehold.co/300x200?text=积木套装" alt="积木套装">
+        <div class="info">
+            <h3>创意积木套装</h3>
+            <p>释放想象力，无限组合玩法。</p>
+        </div>
+    </div>
+    <div class="toy-card">
+        <img src="https://placehold.co/300x200?text=毛绒玩具" alt="毛绒玩具">
+        <div class="info">
+            <h3>萌趣毛绒玩具</h3>
+            <p>柔软可爱，陪伴每一个温暖时刻。</p>
+        </div>
+    </div>
+    <div class="toy-card">
+        <img src="https://placehold.co/300x200?text=拼图游戏" alt="拼图游戏">
+        <div class="info">
+            <h3>趣味拼图游戏</h3>
+            <p>开发思维，寓教于乐。</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2026 玩具王国 Toy Kingdom 保留所有权利
+</footer>
+
+</body>
+</html>
